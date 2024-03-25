@@ -107,8 +107,8 @@ networkHost: ""
 
 volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
-  resources:
   storageClassName: nfs-client
+  resources:
     requests:
       storage: 30Gi
 rbac:
