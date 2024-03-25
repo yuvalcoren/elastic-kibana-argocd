@@ -103,14 +103,14 @@ initResources: {}
 #   cpu: "25m"
 #   memory: "128Mi"
 
-networkHost: "0.0.0.0"
+networkHost: ""
 
 volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
   resources:
+  storageClassName: nfs-client
     requests:
       storage: 30Gi
-
 rbac:
   create: false
   serviceAccountAnnotations: {}
