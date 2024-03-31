@@ -233,13 +233,13 @@ sysctlVmMaxMapCount: 262144
 
 readinessProbe:
   failureThreshold: 5
-  initialDelaySeconds: 60
+  initialDelaySeconds: 300
   periodSeconds: 15
   successThreshold: 1
   timeoutSeconds: 10
 
 # https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html#request-params wait_for_status
-clusterHealthCheckParams: "wait_for_status=green&timeout=60s"
+clusterHealthCheckParams: "wait_for_status=green&timeout=300s"
 
 ## Use an alternate scheduler.
 ## ref: https://kubernetes.io/docs/tasks/administer-cluster/configure-multiple-schedulers/
